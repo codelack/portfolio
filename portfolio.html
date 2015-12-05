@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<!--
+  Authors: Tabitha Kennedy
+  Created Date: March 10, 2015
+  Modified Date: April 28, 2015
+  Description:
+    Code for a personal portfolio website.
+-->
+<html lang="en">
+<head>
+  <title>Tabitha Kennedy Portfolio</title>
+  <meta name="description" content="Explore design, drawing, video, photography, and 3D art on Tabitha Kennedy's (codelack) digital media portfolio website." />
+  <meta name="keywords" content="portfolio, art, digital media, responsive, gallery, Tab, Tabitha Kennedy, codelack, codelackarts, dagrblz" />
+  <meta name="author" content="Tabitha Kennedy" />
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/homethumbs.css" rel="stylesheet" type="text/css" />
+  <link href="css/portfolio.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,100italic,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+  <style> @import  url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,100italic,300italic,400italic,500italic,700italic);
+          @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,100);
+          @import url(http://fonts.googleapis.com/css?family=Damion);
+  </style>
+</head>
+
+
+<body>
+
+
+
+<header>
+
+  <!-- <div id="navbutton">
+    <a><i class="fa fa-bars fa-2x"></i></a>
+  </div> -->
+  <input type="checkbox" id="navbutton" class="navbutton" />
+    <label for="navbutton"><i class="fa fa-bars fa-2x" title="menu"></i></label>
+
+  <nav>
+    <div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">CV</a></li>
+      </ul>
+      <span id="navicons">
+        <a href="index.html">
+          <i class="fa fa-home fa-2x" title="Home"></i>
+        </a>
+        <a href="portfolio.html">
+          <i class="fa fa-briefcase fa-2x" title="Portfolio"></i>
+        </a>
+        <a href="timeline.html">
+          <i class="fa fa-clock-o fa-2x" title="Art Timeline"></i>
+        </a>
+        <a href="projects.html">
+          <i class="fa fa-pencil-square fa-2x" title="Personal Projects"></i>
+        </a>
+        <a href="resume.html">
+          <i class="fa fa-graduation-cap fa-2x" title="Résumé"></i>
+        </a>
+      </span>
+    </div>
+  </nav>
+
+  <section>
+    <a href="index.html" title="home">
+      <img src="img/header-logo.png" alt="Tabitha Kennedy logo" width="75" height="75" />
+    </a>
+    <div><h1>codelackarts</h1><h4>Tabitha Kennedy</h4></div>
+  </section>
+
+</header>
+
+
+<div id="backtotop">
+  <a href="#">▲back to top▲</a>
+</div>
+
+<main id="wrapper">
+<div id="container">
+
+  <section class="homethumbs">
+    <div class="container-fluid">
+      <ul>
+      <!-- <div class="row"> -->
+        <!-- <ul> -->
+          <li>
+            <figure>
+              <img src="img/feat_thumbs/featthumb_design.png" alt="Design">
+              <figcaption>
+              <div class="caption-content">
+                <a href="#pdesign">
+                  <p class="link">Design &#10097;&#10097;</p>
+                </a>
+              </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/feat_thumbs/featthumb_drawing.png" alt="Drawing">
+              <figcaption>
+              <div class="caption-content">
+                <a href="#pdraw">
+                  <p class="link">Drawing &#10097;&#10097;</p>
+                </a>
+              </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/feat_thumbs/featthumb_video.png" alt="Video">
+              <figcaption>
+              <div class="caption-content">
+                <a href="#pvideo">
+                  <p class="link">Video &#10097;&#10097;</p>
+                </a>
+              </div>
+              </figcaption>
+            </figure>
+          </li>
+        <!-- </ul> -->
+      <!-- </div> -->
+
+      <!-- <div class="row"> -->
+        <!-- <ul> -->
+          <li>
+            <figure>
+              <img src="img/feat_thumbs/featthumb_photo.png" alt="Photos">
+              <figcaption>
+              <div class="caption-content">
+                <a href="#pphoto">
+                  <p class="link">Photos &#10097;&#10097;</p>
+                </a>
+              </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/feat_thumbs/featthumb_3d.png" alt="3D">
+              <figcaption>
+              <div class="caption-content">
+                <a href="#p3d">
+                  <p class="link">3D &#10097;&#10097;</p>
+                </a>
+              </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/feat_thumbs/featthumb_more.png" alt="All">
+              <figcaption>
+              <div class="caption-content">
+                <a href="#">
+                  <p class="link">&#10092;&#10092; All &#10093;&#10093;</p>
+                </a>
+              </div>
+              </figcaption>
+            </figure>
+          </li>
+        <!-- </ul> -->
+      <!-- </div> -->
+      </ul>
+
+    </div>
+  </section>
+
+
+  <article class="portarticle">
+    <h1>portfolio</h1>
+    <h2 id="pdesign">Design Works</h2>
+    <ul>
+      <li class="notop">
+        <div>
+          <a href="#pde014">
+            <img src="img/port_thumbs/design_bepko1_141117.png" alt="Touchscreen Kiosk" width="320"  />
+          </a>
+          <a id="pde014" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/design_bepko1_141117.png" alt="Touchscreen Kiosk"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Touchscreen Kiosk</h3>
+          <p>2014-2015<br />Illustrator</p>
+          <h6>For Bepko internship, designing and coordinating a touchscreen kiosk for the Welcome Center of Indiana University Kokomo.</h6>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pde013">
+            <img src="img/port_thumbs/design_album3_140319.png" alt="Album Cover" width="320"  />
+          </a>
+          <a id="pde013" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/design_album3_140319.png" alt="Album Cover"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Album Covers</h3>
+          <p>2014-2015<br />Photoshop</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+            <a href="#pde012">
+              <img src="img/port_thumbs/design_album2_140221.png" alt="Album Cover" width="320"  />
+            </a>
+            <a id="pde012" href="#x" class="lightbox" title="Click anywhere to close">
+              <img src="img/port_full/design_album2_140221.png" alt="Album Cover"   />
+              <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+            </a>
+            <a href="#pde011">
+              <img src="img/port_thumbs/design_album1_140221.png" alt="Album Cover" width="320"  />
+            </a>
+            <a id="pde011" href="#x" class="lightbox" title="Click anywhere to close">
+              <img src="img/port_full/design_album1_140221.png" alt="Album Cover"   />
+              <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+            </a>
+          </div>
+        </li>
+      <li>
+        <div>
+          <a href="#pde010">
+            <img src="img/port_thumbs/design_typecards_140429.jpg" alt="Typographic Playing Cards" width="320"   />
+          </a>
+          <a id="pde010" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/design_typecards_140429.jpg" alt="Typographic Playing Cards"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Typographic Playing Cards</h3>
+          <p>2014<br />Illustrator</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pde009">
+            <img src="img/port_thumbs/design_WUI1_140318.png" alt="Windows UI Mockup" width="320"  />
+          </a>
+          <a id="pde009" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/design_WUI1_140318.png" alt="Windows UI Mockup"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Windows UI Mockup</h3>
+          <p>2014<br />Photoshop</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+            <a href="#pde008">
+              <img src="img/port_thumbs/design_WUI2_140318.png" alt="Windows UI Mockup" width="320"  />
+            </a>
+            <a id="pde008" href="#x" class="lightbox" title="Click anywhere to close">
+              <img src="img/port_full/design_WUI2_140318.png" alt="Windows UI Mockup"   />
+              <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+            </a>
+            <a href="#pde007">
+              <img src="img/port_thumbs/design_WUI3_140318.png" alt="Windows UI Mockup" width="320"  />
+            </a>
+            <a id="pde007" href="#x" class="lightbox" title="Click anywhere to close">
+              <img src="img/port_full/design_WUI3_140318.png" alt="Windows UI Mockup"   />
+              <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+            </a>
+          </div>
+        </li>
+      <li>
+        <div>
+          <a href="#pde006">
+            <img src="img/port_thumbs/design_stamps_140301.png" alt="Typographic Stamps" width="320"  />
+          </a>
+          <a id="pde006" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/design_stamps_140301.png" alt="Typographic Stamps"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Typographic Stamps</h3>
+          <p>2014<br />Illustrator</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pde005">
+            <img src="img/port_thumbs/design_moontexture2_131015.jpg" alt="Moon Texture" width="320"  />
+          </a>
+          <a id="pde005" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/design_moontexture2_131015.jpg" alt="Moon Texture"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Moon Texture</h3>
+          <p>2013<br />Photo, Photoshop;<br />Printed Paper on Styrofoam</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+            <a href="#pde004">
+              <img src="img/port_thumbs/design_moontexture1_131015.png" alt="Moon Texture" width="320"  />
+            </a>
+            <a id="pde004" href="#x" class="lightbox" title="Click anywhere to close">
+              <img src="img/port_full/design_moontexture1_131015.png" alt="Moon Texture"   />
+              <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+            </a>
+          </div>
+        </li>
+      <li>
+        <div>
+          <a href="#pde003">
+            <img src="img/port_thumbs/design_lines2_13.jpg" alt="Line Drawings" width="320"  />
+          </a>
+          <a id="pde003" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/design_lines2_13.jpg" alt="Line Drawings"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Line Drawings</h3>
+          <p>2013<br />Black Micron &amp; Marker on Bristol</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+            <a href="#pde002">
+              <img src="img/port_thumbs/design_lines1_13.jpg" alt="Line Drawings" width="320"  />
+            </a>
+            <a id="pde002" href="#x" class="lightbox" title="Click anywhere to close">
+              <img src="img/port_full/design_lines1_13.jpg" alt="Line Drawings"   />
+              <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+            </a>
+          </div>
+        </li>
+    </ul>
+  </article>
+
+  <article class="portarticle">
+    <h2 id="pdraw">Drawing Works</h2>
+    <ul>
+      <li class="notop">
+        <div>
+          <a href="#pdr010">
+            <img src="img/port_thumbs/draw_zine1_130625.png" alt="Teeth" width="320"  />
+          </a>
+          <a id="pdr010" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/draw_zine1_130625.png" alt="Teeth"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Teeth</h3>
+          <p>2013<br />MyPaint</p>
+          <h6>Submission in the first publication of <span style="font-style:normal;">Jar of Teeth</span>, a theme-based art zine by <a href="http://lime-wood.tumblr.com/" target="_blank">Liam Gregg</a>.</h6>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pdr009">
+            <img src="img/port_thumbs/draw_pyro4_12.jpg" alt="Wolf Pyrography" width="320"   />
+          </a>
+          <a id="pdr009" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/draw_pyro4_12.jpg" alt="Wolf Pyrography"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Wolf Pyrography</h3>
+          <p>2012<br />Wood Pyrography, Sculpting</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pdr008">
+            <img src="img/port_thumbs/draw_scratch1_12.png" alt="Born From Ashes" width="320"   />
+          </a>
+          <a id="pdr008" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/draw_scratch1_12.png" alt="Born From Ashes"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Born From Ashes</h3>
+          <p>2012<br />Scratchboard</p>
+          <h6>This piece won a Gold Key in the Scholastic Art and Writing Awards of 2013.</h6>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pdr007">
+            <img src="img/port_thumbs/draw_lionlines_12.jpg" alt="Lion Lines" width="320"   />
+          </a>
+          <a id="pdr007" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/draw_lionlines_12.jpg" alt="Lion Lines"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Lion Lines</h3>
+          <p>2012<br />Acrylics on Cardboard</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pdr006">
+            <img src="img/port_thumbs/draw_withthebirds_12.png" alt="With the Birds" width="320"   />
+          </a>
+          <a id="pdr006" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/draw_withthebirds_12.png" alt="With the Birds"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>With the Birds</h3>
+          <p>2012<br />Photoshop</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pdr005">
+            <img src="img/port_thumbs/draw_crosshatchself_12.png" alt="Cross-hatched Self Portrait" width="320"   />
+          </a>
+          <a id="pdr005" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/draw_crosshatchself_12.png" alt="Cross-hatched Self Portrait"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Cross-hatched Self Portrait</h3>
+          <p>2012<br />Colored Pencil on Watercolor Paper</p>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <article class="portarticle">
+    <h2 id="pvideo">Video Works</h2>
+    <ul>
+      <li class="notop">
+        <div>
+          <iframe class="portvideo" width="320" height="180" src="https://www.youtube.com/embed/9BUB8RZyiM0?rel=0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h3>Digital Composition</h3>
+          <p>2014<br />After Effects</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <iframe class="portvideo" width="320" height="180" src="https://www.youtube.com/embed/An8GVm3i6HQ?rel=0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h3>2013 Demo Reel</h3>
+          <p>2014<br />Premiere Pro</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <iframe class="portvideo" width="320" height="180" src="https://www.youtube.com/embed/5YVxC5_307M?rel=0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h3>BTS Video Practicum Class</h3>
+          <p>2013<br />Premiere Pro, Canon Rebel t4i</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <iframe class="portvideo" width="320" height="180" src="https://www.youtube.com/embed/YhOwXJrPt0A?rel=0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h3>Animation: TAOFAO</h3>
+          <p>2013<br />Photoshop, Premiere Pro</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <iframe class="portvideo" width="320" height="180" src="https://www.youtube.com/embed/WlEFyj8cJRc?rel=0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h3>High School Skit: You're In Hell, Doug</h3>
+          <p>2013<br />Final Cut Pro, After Effects, Canon Rebel t4i</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <iframe class="portvideo" width="320" height="180" src="https://www.youtube.com/embed/ULUBpf8tSNc?rel=0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h3>Kinetic Typography</h3>
+          <p>2012<br />After Effects</p>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <article class="portarticle">
+    <h2 id="pphoto">Photography Works</h2>
+    <ul>
+      <li class="notop">
+        <div>
+          <a href="#pph018">
+            <img src="img/port_thumbs/photo_mourning1_150417.jpg" alt="Young Mourning Dove in Nest" width="320" />
+          </a>
+          <a id="pph018" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_mourning1_150417.jpg" alt="Young Mourning Dove in Nest" />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Young Mourning Dove in Nest</h3>
+          <p>2015<br />Canon Rebel t4i</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pph017">
+            <img src="img/port_thumbs/photo_plant3_140930.jpg" alt="Plants at Richey" width="320"  />
+          </a>
+          <a id="pph017" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_plant3_140930.jpg" alt="Plants at Richey"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Plants at Richey</h3>
+          <p>2014<br />Canon Rebel t4i</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="#pph016">
+                <img src="img/port_thumbs/photo_plant4_140930.jpg" alt="Plants at Richey" width="320"  />
+              </a>
+              <a id="pph016" href="#x" class="lightbox" title="Click anywhere to close">
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+                <img src="img/port_full/photo_plant4_140930.jpg" alt="Plants at Richey"   />
+              </a>
+              <a href="#pph015">
+                <img src="img/port_thumbs/photo_bugs07_140930.jpg" alt="Plants at Richey" width="320"  />
+              </a>
+              <a id="pph015" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/photo_bugs07_140930.jpg" alt="Plants at Richey"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+            </div>
+          </li>
+      <!--<li>
+        <div>
+          <a href="#pph014">
+            <img src="img/port_thumbs/photo_bugs08_141101.JPG" alt="Touchscreen Kiosk" width="320"  />
+          </a>
+          <a id="pph014" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_bugs08_141101.JPG" alt="Touchscreen Kiosk"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Spider Dangling from Web</h3>
+          <p>2014<br />Canon Rebel t4i</p>
+        </div>
+      </li>-->
+      <li>
+        <div>
+          <a href="#pph013">
+            <img src="img/port_thumbs/photo_bugs06_140726.JPG" alt="Orb-Weaver in Pennsylvania" width="320"  />
+          </a>
+          <a id="pph013" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_bugs06_140726.JPG" alt="Orb-Weaver in Pennsylvania"   />
+          </a>
+        </div>
+        <div>
+          <h3>Orb-Weaver in Pennsylvania</h3>
+          <p>2014<br />Canon Rebel t4i</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="#pph012">
+                <img src="img/port_thumbs/photo_bugs05_140711.JPG" alt="Orb-Weaver in Pennsylvania" width="320"  />
+              </a>
+              <a id="pph012" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/photo_bugs05_140711.JPG" alt="Orb-Weaver in Pennsylvania"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+            </div>
+          </li>
+      <li>
+        <div>
+          <a href="#pph010">
+            <img src="img/port_thumbs/photo_couple1_131006.jpg" alt="Couple Portraits at the Park" width="320"  />
+          </a>
+          <a id="pph010" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_couple1_131006.jpg" alt="Couple Portraits at the Park"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Couple Portraits at the Park</h3>
+          <p>2013<br />Canon Rebel t4i</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="#pph009">
+                <img src="img/port_thumbs/photo_couple2_131006.jpg" alt="Couple Portraits at the Park" width="320"  />
+              </a>
+              <a id="pph009" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/photo_couple2_131006.jpg" alt="Couple Portraits at the Park"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+              <a href="#pph008">
+                <img src="img/port_thumbs/photo_couple3_131006.jpg" alt="Couple Portraits at the Park" width="320"  />
+              </a>
+              <a id="pph008" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/photo_couple3_131006.jpg" alt="Couple Portraits at the Park"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+            </div>
+          </li>
+      <li>
+        <div>
+          <a href="#pph005">
+            <img src="img/port_thumbs/photo_bugs03_130823.JPG" alt="Orb Weaver in Indy" width="320"  />
+          </a>
+          <a id="pph005" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_bugs03_130823.JPG" alt="Orb Weaver in Indy"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Orb Weaver in Indy</h3>
+          <p>2013<br />Canon Rebel t4i</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#pph004">
+            <img src="img/port_thumbs/photo_bugs02_130802.jpg" alt="Bugs in Pennsylvania" width="320"  />
+          </a>
+          <a id="pph004" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_bugs02_130802.jpg" alt="Bugs in Pennsylvania"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Bugs in Pennsylvania</h3>
+          <p>2013<br />Canon Rebel t4i</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="#pph003">
+                <img src="img/port_thumbs/photo_bugs01_130801.jpg" alt="Bugs in Pennsylvania" width="320"  />
+              </a>
+              <a id="pph003" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/photo_bugs01_130801.jpg" alt="Bugs in Pennsylvania"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+            </div>
+          </li>
+      <li>
+        <div>
+          <a href="#pph001">
+            <img src="img/port_thumbs/photo_bullet_130718.JPG" alt="Bullet Shell at Target Practice" width="320"  />
+          </a>
+          <a id="pph001" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/photo_bullet_130718.JPG" alt="Bullet Shell at Target Practice"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Bullet Shell at Target Practice</h3>
+          <p>2013<br />Canon Rebel t4i</p>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <article class="portarticle">
+    <h2 id="p3d">3D Works</h2>
+    <ul>
+      <li class="notop">
+        <div>
+          <a href="img/port_full/3d_blood2_14.gif" target="_blank">
+            <img src="img/port_full/3d_blood2_14.gif" alt="Blood/Smoke Simulation" width="320"  />
+          </a>
+          <!--<a id="p3d017" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/3d_blood2_14.gif" alt="Blood/Smoke Simulation"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>-->
+        </div>
+        <div>
+          <h3>Blood/Smoke Simulation</h3>
+          <p>2014<br />Blender, After Effects</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="img/port_full/3d_blood3_14.gif" target="_blank">
+                <img src="img/port_full/3d_blood3_14.gif" alt="Blood/Smoke Simulation" width="320"  />
+              </a>
+              <!--<a id="p3d016" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/3d_blood3_14.gif" alt="Blood/Smoke Simulation"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>-->
+              <a href="img/port_full/3d_blood4_14.gif" target="_blank">
+                <img src="img/port_full/3d_blood4_14.gif" alt="Blood/Smoke Simulation" width="320"  />
+              </a>
+              <!--<a id="p3d015" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/3d_blood4_14.gif" alt="Blood/Smoke Simulation"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>-->
+              <a href="img/port_full/3d_blood5_14.gif" target="_blank">
+                <img src="img/port_full/3d_blood5_14.gif" alt="Blood/Smoke Simulation" width="320"  />
+              </a>
+              <!--<a id="p3d014" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/3d_blood5_14.gif" alt="Blood/Smoke Simulation"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>-->
+            </div>
+          </li>
+      <li>
+        <div>
+          <a href="#p3d013">
+            <img src="img/port_thumbs/3d_clcube1_14.png" alt="Cubes" width="320"  />
+          </a>
+          <a id="p3d013" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/3d_clcube1_14.png" alt="Cubes"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Cubes</h3>
+          <p>2014<br />Blender</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="#p3d012">
+                <img src="img/port_thumbs/3d_clcube2_14.png" alt="Cubes" width="320"  />
+              </a>
+              <a id="p3d012" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/3d_clcube2_14.png" alt="Cubes"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+              <a href="#p3d010">
+                <img src="img/port_thumbs/3d_clcube4_14.png" alt="Cubes" width="320"  />
+              </a>
+              <a id="p3d010" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/3d_clcube4_14.png" alt="Cubes"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+            </div>
+          </li>
+      <li>
+        <div>
+          <a href="#p3d007">
+            <img src="img/port_thumbs/3d_spike2_140221.png" alt="Space Icosphere" width="320"  />
+          </a>
+          <a id="p3d007" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/3d_spike2_140221.png" alt="Space Icosphere"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Space Icosphere</h3>
+          <p>2014<br />Blender</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="#p3d006">
+                <img src="img/port_thumbs/3d_spike3_140221.png" alt="Space Icosphere" width="320"  />
+              </a>
+              <a id="p3d006" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/3d_spike3_140221.png" alt="Space Icosphere"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+            </div>
+          </li>
+      <li>
+        <div>
+          <a href="img/port_full/3d_lightcube_130704.gif" target="_blank">
+            <img src="img/port_full/3d_lightcube_130704.gif" alt="Simple Water/Illumination Simulation" width="320"  />
+          </a>
+          <!--<a id="p3d005" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/3d_lightcube_130704.gif" alt="Simple Water/Illumination Simulation"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>-->
+        </div>
+        <div>
+          <h3>Simple Water/Illumination Simulation</h3>
+          <p>2013<br />Blender</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#p3d004">
+            <img src="img/port_thumbs/3d_xavier1_130203.png" alt="Character Studies" width="320"  />
+          </a>
+          <a id="p3d004" href="#x" class="lightbox" title="Click anywhere to close">
+            <img src="img/port_full/3d_xavier1_130203.png" alt="Character Studies"   />
+            <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+          </a>
+        </div>
+        <div>
+          <h3>Character Studies</h3>
+          <p>2013<br />Blender, FireAlpaca</p>
+        </div>
+      </li>
+          <li class="notop">
+            <div>
+              <a href="#p3d002">
+                <img src="img/port_thumbs/3d_alcyone1_130223.png" alt="Character Studies" width="320"  />
+              </a>
+              <a id="p3d002" href="#x" class="lightbox" title="Click anywhere to close">
+                <img src="img/port_full/3d_alcyone1_130223.png" alt="Character Studies"   />
+                <span><i class="fa fa-close fa-2x" title="Click anywhere to close."></i></span>
+              </a>
+            </div>
+          </li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Contact &amp; Links</h2>
+    <ul class="contactinfo">
+      <li>
+        <strong>Email:</strong>
+        <script type="text/javascript">var mai=("coded.KN@"+"gmail.com");document.write('<a href="mailto:'+mai+'">'+mai+'</a>'); </script><noscript><em>(Email address protected by Javascript. Please enable Javascript to contact me.)</em></noscript>
+      </li>
+      <li>
+        <strong>LinkedIn:</strong>
+        <a href="http://www.linkedin.com/in/tabithakennedy" target="_blank">
+          http://www.linkedin.com/in/tabithakennedy</a>
+      </li>
+      <li>
+        <strong>Instagram:</strong>
+        <a href="http://instagram.com/codelackarts#" target="_blank">
+          codelackarts</a>
+      </li>
+      <li>
+        <strong>deviantART:</strong>
+        <a href="http://codelack.deviantart.com" target="_blank">
+          http://codelack.deviantart.com</a>
+      </li>
+      <li>
+        <strong>YouTube:</strong>
+        <a href="http://www.youtube.com/user/dagrblz" target="_blank">
+          codelack</a>
+      </li>
+      <li>
+        <strong>Storenvy:</strong>
+        <a href="http://codelackarts.storenvy.com" target="_blank">
+          http://codelackarts.storenvy.com</a>
+      </li>
+    </ul>
+    <p class="conticons">
+      <script type="text/javascript">var mai=("coded.KN@"+"gmail.com");document.write('<a href="mailto:'+mai+'">'+'<i class="fa fa-envelope fa-2x" title="Email">'+'</i>'+'</a>');
+      </script>
+      <a href="http://www.linkedin.com/in/tabithakennedy" target="_blank">
+        <i class="fa fa-linkedin-square fa-2x" title="LinkedIn"></i>
+      </a>
+      <a href="http://instagram.com/codelackarts#" target="_blank">
+        <i class="fa fa-instagram fa-2x" title="Instagram"></i>
+      </a>
+      <a href="http://codelack.deviantart.com" target="_blank">
+        <i class="fa fa-deviantart fa-2x" title="deviantART"></i>
+      </a>
+      <a href="http://www.youtube.com/user/dagrblz" target="_blank">
+        <i class="fa fa-youtube-play fa-2x" title="YouTube"></i>
+      </a>
+      <a href="http://codelackarts.storenvy.com" target="_blank">
+        <i class="fa fa-shopping-cart fa-2x" title="Storenvy"></i>
+      </a>
+    </p>
+  </article>
+
+</div>
+</main>
+
+
+<footer>
+  <div id="left">
+    <p>Portfolio website and contents &copy; 2014-<script>document.write(new Date().getFullYear())</script><noscript>(current year)</noscript> Tabitha Kennedy</p>
+  </div>
+  <div id="right">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html#pdesign">Design</a></li>
+      <li><a href="portfolio.html#pdraw">Drawing</a></li>
+    </ul>
+    <ul>
+      <li><a href="portfolio.html#pvideo">Video</a></li>
+      <li><a href="portfolio.html#pphoto">Photos</a></li>
+      <li><a href="portfolio.html#p3d">3D</a></li>
+    </ul>
+    <ul>
+      <li><a href="timeline.html">Timeline</a>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+</body>
+</html>

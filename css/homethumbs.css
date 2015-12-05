@@ -1,0 +1,130 @@
+/*
+  Authors: Tabitha Kennedy
+  Created Date: March 23, 2015
+  Modified Date: April 06, 2015
+  Description:
+    CSS styles for the homepage's responsive gallery thumbnails.
+  Disclaimer:
+    Code written for the responsive gallery was inspired by and based off Peter Finlin's Boxify code.
+*/
+
+/*    Responsive Thumbnail Gallery    */
+
+.homethumbs * {
+  box-sizing: border-box;
+  /*overflow-y: hidden;*/
+}
+section.homethumbs {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.homethumbs ul {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+.homethumbs ul li {
+    float: left;
+    /*min-height: 100%;*/
+    /*height: 100%;*/
+    height: calc(1/3 * 100%);
+    width: calc(1/3 * 100%);
+    background-color: #000;
+    list-style: outside none none;
+    /*margin-top: -5px; /* <--fixes space except for bottom row */
+}
+.homethumbs figure {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.homethumbs figure img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(70%);
+      -webkit-filter: grayscale(70%);
+    vertical-align: middle; /* <--somehow fixes both black row spaces */
+}
+.homethumbs figcaption { /* <--the colored hover box */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76,106,160, 0.80);
+    opacity: 0;
+    overflow-y: hidden;
+}
+.homethumbs figcaption .caption-content {
+  position: absolute;
+    top : 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+}
+main section.homethumbs .link {
+  color: #ccc;
+  text-shadow: 1px 1px 0px #336;
+  text-align: center;
+  font-family: 'Roboto Slab', Gerogia, Cambria, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  vertical-align: middle;
+  margin: 0;
+}
+.homethumbs .link:hover, .homethumbs .link:focus {
+    color: white;
+}
+.homethumbs figure:hover figcaption, .homethumbs figure:focus figcaption {
+    opacity: 1;
+}
+.homethumbs figure:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+.homethumbs figure:hover img {
+  filter: blur(2px) grayscale(70%);   /*<-- restated so it doesn't change back when hover */
+    -webkit-filter: blur(2px) grayscale(70%);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.container-fluid {
+  margin-right:auto;
+  margin-left:auto;
+  /*padding-left:15px;*/
+  /*padding-right:15px;*/
+}
+.row {
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.container-fluid:before,.container-fluid:after,.row:before,.row:after {
+content: "";
+display: table;
+}
+.container-fluid:after,.row:after {
+  clear:both;
+  /*margin: -5px; /* <--fixes space on bottom row */
+}
+
+
+/*    Responsive Thumbnails   */
+@media screen and (max-width:600px){
+.homethumbs ul li{width:50%;}
+.homethumbs .row {display:inline-block;}
+}
+@media screen and (max-width:400px){
+section.homethumbs {box-shadow: none; -webkit-box-shadow: none;}
+.homethumbs ul li{width:100%;height:20vw;min-height:100px;overflow:hidden;float:none;}
+.homethumbs img {opacity:0;}
+.homethumbs figcaption {opacity:1;}
+main section.homethumbs .link {color:white;}
+.homethumbs li:nth-child(2n+2) {background-color: rgba(170, 112, 74, 1);}
+.homethumbs li:nth-child(2) p {font-size: 22px;}
+.homethumbs figcaption .caption-content {top:50px;}
+}
